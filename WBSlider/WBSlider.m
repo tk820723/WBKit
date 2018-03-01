@@ -134,9 +134,9 @@
     self.sliderRect = CGRectMake(self.sliderPosition * width + startingPos - self.sliderRadius * 2, self.bounds.size.height * 0.5 - self.sliderRadius * 2, self.sliderRadius * 4, self.sliderRadius * 4);
     
     if (self.type == WBSliderTypeTwoWay) {
-        self.zeroPointRect = CGRectMake(self.wb_width * 0.5 - 10, 0, 20, self.wb_height);
+        self.zeroPointRect = CGRectMake(self.bounds.size.width * 0.5 - 10, 0, 20, self.bounds.size.height);
     }else{
-        self.zeroPointRect = CGRectMake(0, 0, 20, self.wb_height);
+        self.zeroPointRect = CGRectMake(0, 0, 20, self.bounds.size.height);
     }
 }
 

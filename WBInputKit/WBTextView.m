@@ -103,7 +103,7 @@
     
     [self.placeholderLabel sizeToFit];
     
-    self.placeholderLabel.frame = CGRectMake(self.textContainerInset.left + 5, self.textContainerInset.top, self.placeholderLabel.wb_width, self.placeholderLabel.wb_height);
+    self.placeholderLabel.frame = CGRectMake(self.textContainerInset.left + 5, self.textContainerInset.top, self.placeholderLabel.bounds.size.width, self.placeholderLabel.bounds.size.height);
 }
 
 
