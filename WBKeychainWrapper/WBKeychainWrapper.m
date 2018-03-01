@@ -85,7 +85,7 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.velotech.dts.KeychainUI\0
 }
 
 - (void)setKeychainPassword:(NSString *)password{
-    [self setKeychainObject:password forKey:kSecValueData];
+    [self setKeychainObject:password forKey:(__bridge id)kSecValueData];
 }
 
 // Implement the myObjectForKey: method, which reads an attribute value from a dictionary:
@@ -99,7 +99,6 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.velotech.dts.KeychainUI\0
 
 - (void)resetKeychainItem
 {
-    OSStatus keychainErr = noErr;
     if (!keychainData) //Allocate the keychainData dictionary if it doesn't exist yet.
     {
         self.keychainData = [[NSMutableDictionary alloc] init];
@@ -112,7 +111,10 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.velotech.dts.KeychainUI\0
         [self dictionaryToSecItemFormat:keychainData];
         // Delete the keychain item in preparation for resetting the values:
         OSStatus errorcode = SecItemDelete((__bridge CFDictionaryRef)tmpDictionary);
-        NSAssert(errorcode == noErr, @"Problem deleting current keychain item." );
+//        NSAssert(errorcode == noErr, @"Problem deleting current keychain item." );
+        if (errorcode!=noErr) {
+            NSLog(@"Problem deleting current keychain item.");
+        }
     }
     
     // Default generic data for Keychain Item:
@@ -126,7 +128,7 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.velotech.dts.KeychainUI\0
     NSMutableDictionary *tmpDictionary =
     [self dictionaryToSecItemFormat:keychainData];
     CFTypeRef persistKey = nil;
-    OSStatus status = SecItemAdd((__bridge CFDictionaryRef)tmpDictionary, &persistKey);
+    SecItemAdd((__bridge CFDictionaryRef)tmpDictionary, &persistKey);
     if (persistKey != nil){
         CFRelease(persistKey);
     }
@@ -238,7 +240,10 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.velotech.dts.KeychainUI\0
         OSStatus errorcode = SecItemAdd(
                                         (__bridge CFDictionaryRef)[self dictionaryToSecItemFormat:keychainData],
                                         NULL);
-        NSAssert(errorcode == noErr, @"Couldn't add the Keychain Item." );
+        if (errorcode!=noErr) {
+            NSLog(@"Couldn't add the Keychain Item.");
+        }
+//        NSAssert(errorcode == noErr, @"Couldn't add the Keychain Item." );
         if (attributes) CFRelease(attributes);
         
     }else if(keychainError == noErr){
@@ -260,7 +265,10 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.velotech.dts.KeychainUI\0
         OSStatus errorcode = SecItemUpdate(
                                            (__bridge CFDictionaryRef)updateItem,
                                            (__bridge CFDictionaryRef)tempCheck);
-        NSAssert(errorcode == noErr, @"Couldn't update the Keychain Item." );
+        if (errorcode!=noErr) {
+            NSLog(@"Couldn't update the Keychain Item");
+        }
+//        NSAssert(errorcode == noErr, @"Couldn't update the Keychain Item." );
     }
 }
 

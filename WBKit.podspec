@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+		   Useful Develop Kit, which implement by Objective-C.
                    DESC
 
   s.homepage     = "https://github.com/tk820723/WBKit"
@@ -38,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -64,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -90,7 +91,29 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes/**/*.{h,m}"
+  s.subspec 'WBAssetsKit' do |ss|
+	ss.source_files = 'WBAssetsKit/*.{h,m}'
+  end
+
+  s.subspec 'WBCategories' do |ss|
+	ss.source_files = 'WBCategories/*.{h,m}'
+  end
+
+  s.subspec 'WBHorizontalButtonMenu' do |ss|
+	ss.source_files = 'WBHorizontalButtonMenu/*.{h,m}'
+  end
+
+  s.subspec 'WBInputKit' do |ss|
+	ss.source_files = 'WBInputKit/*.{h,m}'
+  end
+
+  s.subspec 'WBKeychainWrapper' do |ss|
+	ss.source_files = 'WBKeychainWrapper/*.{h,m}'
+  end
+
+  s.subspec 'WBSlider' do |ss|
+	ss.source_files = 'WBSlider/*.{h,m}'
+  end
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -116,6 +139,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
+  s.frameworks = 'Foundation', 'UIKit'
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
@@ -129,7 +153,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.requires_arc = true
+  # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
