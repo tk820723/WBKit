@@ -92,27 +92,27 @@ Pod::Spec.new do |s|
   #
 
   s.subspec 'WBAssetsKit' do |ss|
-	ss.source_files = 'WBAssetsKit/*.{h,m}'
+	ss.source_files = 'WBKit/WBAssetsKit/*.{h,m}'
   end
 
   s.subspec 'WBCategories' do |ss|
-	ss.source_files = 'WBCategories/*.{h,m}'
+	ss.source_files = 'WBKit/WBCategories/*.{h,m}'
   end
 
   s.subspec 'WBHorizontalButtonMenu' do |ss|
-	ss.source_files = 'WBHorizontalButtonMenu/*.{h,m}'
+	ss.source_files = 'WBKit/WBHorizontalButtonMenu/*.{h,m}'
   end
 
   s.subspec 'WBInputKit' do |ss|
-	ss.source_files = 'WBInputKit/*.{h,m}'
+	ss.source_files = 'WBKit/WBInputKit/*.{h,m}'
   end
 
   s.subspec 'WBKeychainWrapper' do |ss|
-	ss.source_files = 'WBKeychainWrapper/*.{h,m}'
+	ss.source_files = 'WBKit/WBKeychainWrapper/*.{h,m}'
   end
 
   s.subspec 'WBSlider' do |ss|
-	ss.source_files = 'WBSlider/*.{h,m}'
+	ss.source_files = 'WBKit/WBSlider/*.{h,m}'
   end
   # s.exclude_files = "Classes/Exclude"
 

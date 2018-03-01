@@ -13,23 +13,23 @@
 		265F51D42047A98B0099385F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265F51D32047A98B0099385F /* Assets.xcassets */; };
 		265F51D72047A98B0099385F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265F51D52047A98B0099385F /* LaunchScreen.storyboard */; };
 		265F51DA2047A98B0099385F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F51D92047A98B0099385F /* main.m */; };
-		265F52442047AB270099385F /* NSArray+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F521D2047AB270099385F /* NSArray+WB.m */; };
-		265F52452047AB270099385F /* NSDateFormatter+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F521F2047AB270099385F /* NSDateFormatter+WB.m */; };
-		265F52462047AB270099385F /* NSString+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52212047AB270099385F /* NSString+WB.m */; };
-		265F52472047AB270099385F /* UIButton+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52232047AB270099385F /* UIButton+WB.m */; };
-		265F52482047AB270099385F /* UIColor+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52252047AB270099385F /* UIColor+WB.m */; };
-		265F52492047AB270099385F /* UIImage+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52272047AB270099385F /* UIImage+WB.m */; };
-		265F524A2047AB270099385F /* UINavigationController+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52292047AB270099385F /* UINavigationController+WB.m */; };
-		265F524B2047AB270099385F /* UIView+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F522B2047AB270099385F /* UIView+WB.m */; };
-		265F524C2047AB270099385F /* WBColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F522F2047AB270099385F /* WBColorSlider.m */; };
-		265F524D2047AB270099385F /* WBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52312047AB270099385F /* WBSlider.m */; };
-		265F524E2047AB270099385F /* WBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52342047AB270099385F /* WBTextField.m */; };
-		265F524F2047AB270099385F /* WBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52362047AB270099385F /* WBTextView.m */; };
-		265F52502047AB270099385F /* WBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52392047AB270099385F /* WBAsset.m */; };
-		265F52512047AB270099385F /* WBAssetAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F523B2047AB270099385F /* WBAssetAlbum.m */; };
-		265F52522047AB270099385F /* WBAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F523D2047AB270099385F /* WBAssetsManager.m */; };
-		265F52532047AB270099385F /* WBHorizontalButtonMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52402047AB270099385F /* WBHorizontalButtonMenu.m */; };
-		265F52542047AB270099385F /* WBKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52432047AB270099385F /* WBKeychainWrapper.m */; };
+		265F527F2047B0140099385F /* WBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52582047B0140099385F /* WBAsset.m */; };
+		265F52802047B0140099385F /* WBAssetAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F525A2047B0140099385F /* WBAssetAlbum.m */; };
+		265F52812047B0140099385F /* WBAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F525C2047B0140099385F /* WBAssetsManager.m */; };
+		265F52822047B0140099385F /* NSArray+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F525F2047B0140099385F /* NSArray+WB.m */; };
+		265F52832047B0140099385F /* NSDateFormatter+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52612047B0140099385F /* NSDateFormatter+WB.m */; };
+		265F52842047B0140099385F /* NSString+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52632047B0140099385F /* NSString+WB.m */; };
+		265F52852047B0140099385F /* UIButton+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52652047B0140099385F /* UIButton+WB.m */; };
+		265F52862047B0140099385F /* UIColor+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52672047B0140099385F /* UIColor+WB.m */; };
+		265F52872047B0140099385F /* UIImage+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52692047B0140099385F /* UIImage+WB.m */; };
+		265F52882047B0140099385F /* UINavigationController+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F526B2047B0140099385F /* UINavigationController+WB.m */; };
+		265F52892047B0140099385F /* UIView+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F526D2047B0140099385F /* UIView+WB.m */; };
+		265F528A2047B0140099385F /* WBHorizontalButtonMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52712047B0140099385F /* WBHorizontalButtonMenu.m */; };
+		265F528B2047B0140099385F /* WBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52742047B0140099385F /* WBTextField.m */; };
+		265F528C2047B0140099385F /* WBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52762047B0140099385F /* WBTextView.m */; };
+		265F528D2047B0140099385F /* WBKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52792047B0140099385F /* WBKeychainWrapper.m */; };
+		265F528E2047B0140099385F /* WBColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F527C2047B0140099385F /* WBColorSlider.m */; };
+		265F528F2047B0140099385F /* WBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F527E2047B0140099385F /* WBSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,41 +43,41 @@
 		265F51D62047A98B0099385F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		265F51D82047A98B0099385F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		265F51D92047A98B0099385F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		265F521C2047AB270099385F /* NSArray+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WB.h"; sourceTree = "<group>"; };
-		265F521D2047AB270099385F /* NSArray+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WB.m"; sourceTree = "<group>"; };
-		265F521E2047AB270099385F /* NSDateFormatter+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+WB.h"; sourceTree = "<group>"; };
-		265F521F2047AB270099385F /* NSDateFormatter+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+WB.m"; sourceTree = "<group>"; };
-		265F52202047AB270099385F /* NSString+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WB.h"; sourceTree = "<group>"; };
-		265F52212047AB270099385F /* NSString+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WB.m"; sourceTree = "<group>"; };
-		265F52222047AB270099385F /* UIButton+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WB.h"; sourceTree = "<group>"; };
-		265F52232047AB270099385F /* UIButton+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WB.m"; sourceTree = "<group>"; };
-		265F52242047AB270099385F /* UIColor+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WB.h"; sourceTree = "<group>"; };
-		265F52252047AB270099385F /* UIColor+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WB.m"; sourceTree = "<group>"; };
-		265F52262047AB270099385F /* UIImage+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WB.h"; sourceTree = "<group>"; };
-		265F52272047AB270099385F /* UIImage+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WB.m"; sourceTree = "<group>"; };
-		265F52282047AB270099385F /* UINavigationController+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WB.h"; sourceTree = "<group>"; };
-		265F52292047AB270099385F /* UINavigationController+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WB.m"; sourceTree = "<group>"; };
-		265F522A2047AB270099385F /* UIView+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WB.h"; sourceTree = "<group>"; };
-		265F522B2047AB270099385F /* UIView+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WB.m"; sourceTree = "<group>"; };
-		265F522C2047AB270099385F /* WBCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCategories.h; sourceTree = "<group>"; };
-		265F522E2047AB270099385F /* WBColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBColorSlider.h; sourceTree = "<group>"; };
-		265F522F2047AB270099385F /* WBColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBColorSlider.m; sourceTree = "<group>"; };
-		265F52302047AB270099385F /* WBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSlider.h; sourceTree = "<group>"; };
-		265F52312047AB270099385F /* WBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSlider.m; sourceTree = "<group>"; };
-		265F52332047AB270099385F /* WBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTextField.h; sourceTree = "<group>"; };
-		265F52342047AB270099385F /* WBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTextField.m; sourceTree = "<group>"; };
-		265F52352047AB270099385F /* WBTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTextView.h; sourceTree = "<group>"; };
-		265F52362047AB270099385F /* WBTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTextView.m; sourceTree = "<group>"; };
-		265F52382047AB270099385F /* WBAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAsset.h; sourceTree = "<group>"; };
-		265F52392047AB270099385F /* WBAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAsset.m; sourceTree = "<group>"; };
-		265F523A2047AB270099385F /* WBAssetAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAssetAlbum.h; sourceTree = "<group>"; };
-		265F523B2047AB270099385F /* WBAssetAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAssetAlbum.m; sourceTree = "<group>"; };
-		265F523C2047AB270099385F /* WBAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAssetsManager.h; sourceTree = "<group>"; };
-		265F523D2047AB270099385F /* WBAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAssetsManager.m; sourceTree = "<group>"; };
-		265F523F2047AB270099385F /* WBHorizontalButtonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHorizontalButtonMenu.h; sourceTree = "<group>"; };
-		265F52402047AB270099385F /* WBHorizontalButtonMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHorizontalButtonMenu.m; sourceTree = "<group>"; };
-		265F52422047AB270099385F /* WBKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBKeychainWrapper.h; sourceTree = "<group>"; };
-		265F52432047AB270099385F /* WBKeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBKeychainWrapper.m; sourceTree = "<group>"; };
+		265F52572047B0140099385F /* WBAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAsset.h; sourceTree = "<group>"; };
+		265F52582047B0140099385F /* WBAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAsset.m; sourceTree = "<group>"; };
+		265F52592047B0140099385F /* WBAssetAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAssetAlbum.h; sourceTree = "<group>"; };
+		265F525A2047B0140099385F /* WBAssetAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAssetAlbum.m; sourceTree = "<group>"; };
+		265F525B2047B0140099385F /* WBAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAssetsManager.h; sourceTree = "<group>"; };
+		265F525C2047B0140099385F /* WBAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAssetsManager.m; sourceTree = "<group>"; };
+		265F525E2047B0140099385F /* NSArray+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WB.h"; sourceTree = "<group>"; };
+		265F525F2047B0140099385F /* NSArray+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WB.m"; sourceTree = "<group>"; };
+		265F52602047B0140099385F /* NSDateFormatter+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+WB.h"; sourceTree = "<group>"; };
+		265F52612047B0140099385F /* NSDateFormatter+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+WB.m"; sourceTree = "<group>"; };
+		265F52622047B0140099385F /* NSString+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WB.h"; sourceTree = "<group>"; };
+		265F52632047B0140099385F /* NSString+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WB.m"; sourceTree = "<group>"; };
+		265F52642047B0140099385F /* UIButton+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WB.h"; sourceTree = "<group>"; };
+		265F52652047B0140099385F /* UIButton+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WB.m"; sourceTree = "<group>"; };
+		265F52662047B0140099385F /* UIColor+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WB.h"; sourceTree = "<group>"; };
+		265F52672047B0140099385F /* UIColor+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WB.m"; sourceTree = "<group>"; };
+		265F52682047B0140099385F /* UIImage+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WB.h"; sourceTree = "<group>"; };
+		265F52692047B0140099385F /* UIImage+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WB.m"; sourceTree = "<group>"; };
+		265F526A2047B0140099385F /* UINavigationController+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WB.h"; sourceTree = "<group>"; };
+		265F526B2047B0140099385F /* UINavigationController+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WB.m"; sourceTree = "<group>"; };
+		265F526C2047B0140099385F /* UIView+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WB.h"; sourceTree = "<group>"; };
+		265F526D2047B0140099385F /* UIView+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WB.m"; sourceTree = "<group>"; };
+		265F526E2047B0140099385F /* WBCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCategories.h; sourceTree = "<group>"; };
+		265F52702047B0140099385F /* WBHorizontalButtonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHorizontalButtonMenu.h; sourceTree = "<group>"; };
+		265F52712047B0140099385F /* WBHorizontalButtonMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHorizontalButtonMenu.m; sourceTree = "<group>"; };
+		265F52732047B0140099385F /* WBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTextField.h; sourceTree = "<group>"; };
+		265F52742047B0140099385F /* WBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTextField.m; sourceTree = "<group>"; };
+		265F52752047B0140099385F /* WBTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTextView.h; sourceTree = "<group>"; };
+		265F52762047B0140099385F /* WBTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTextView.m; sourceTree = "<group>"; };
+		265F52782047B0140099385F /* WBKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBKeychainWrapper.h; sourceTree = "<group>"; };
+		265F52792047B0140099385F /* WBKeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBKeychainWrapper.m; sourceTree = "<group>"; };
+		265F527B2047B0140099385F /* WBColorSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBColorSlider.h; sourceTree = "<group>"; };
+		265F527C2047B0140099385F /* WBColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBColorSlider.m; sourceTree = "<group>"; };
+		265F527D2047B0140099385F /* WBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSlider.h; sourceTree = "<group>"; };
+		265F527E2047B0140099385F /* WBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 		265F51C92047A98B0099385F /* WBKitExample */ = {
 			isa = PBXGroup;
 			children = (
-				265F521A2047A9A20099385F /* WBKit */,
+				265F52552047B0140099385F /* WBKit */,
 				265F51CA2047A98B0099385F /* AppDelegate.h */,
 				265F51CB2047A98B0099385F /* AppDelegate.m */,
 				265F51CD2047A98B0099385F /* ViewController.h */,
@@ -124,100 +124,95 @@
 			path = WBKitExample;
 			sourceTree = "<group>";
 		};
-		265F521A2047A9A20099385F /* WBKit */ = {
+		265F52552047B0140099385F /* WBKit */ = {
 			isa = PBXGroup;
 			children = (
-				265F52372047AB270099385F /* WBAssetsKit */,
-				265F521B2047AB270099385F /* WBCategories */,
-				265F523E2047AB270099385F /* WBHorizontalButtonMenu */,
-				265F52322047AB270099385F /* WBInputKit */,
-				265F52412047AB270099385F /* WBKeychainWrapper */,
-				265F522D2047AB270099385F /* WBSlider */,
+				265F52562047B0140099385F /* WBAssetsKit */,
+				265F525D2047B0140099385F /* WBCategories */,
+				265F526F2047B0140099385F /* WBHorizontalButtonMenu */,
+				265F52722047B0140099385F /* WBInputKit */,
+				265F52772047B0140099385F /* WBKeychainWrapper */,
+				265F527A2047B0140099385F /* WBSlider */,
 			);
-			path = WBKit;
+			name = WBKit;
+			path = ../../../WBKit;
 			sourceTree = "<group>";
 		};
-		265F521B2047AB270099385F /* WBCategories */ = {
+		265F52562047B0140099385F /* WBAssetsKit */ = {
 			isa = PBXGroup;
 			children = (
-				265F521C2047AB270099385F /* NSArray+WB.h */,
-				265F521D2047AB270099385F /* NSArray+WB.m */,
-				265F521E2047AB270099385F /* NSDateFormatter+WB.h */,
-				265F521F2047AB270099385F /* NSDateFormatter+WB.m */,
-				265F52202047AB270099385F /* NSString+WB.h */,
-				265F52212047AB270099385F /* NSString+WB.m */,
-				265F52222047AB270099385F /* UIButton+WB.h */,
-				265F52232047AB270099385F /* UIButton+WB.m */,
-				265F52242047AB270099385F /* UIColor+WB.h */,
-				265F52252047AB270099385F /* UIColor+WB.m */,
-				265F52262047AB270099385F /* UIImage+WB.h */,
-				265F52272047AB270099385F /* UIImage+WB.m */,
-				265F52282047AB270099385F /* UINavigationController+WB.h */,
-				265F52292047AB270099385F /* UINavigationController+WB.m */,
-				265F522A2047AB270099385F /* UIView+WB.h */,
-				265F522B2047AB270099385F /* UIView+WB.m */,
-				265F522C2047AB270099385F /* WBCategories.h */,
+				265F52572047B0140099385F /* WBAsset.h */,
+				265F52582047B0140099385F /* WBAsset.m */,
+				265F52592047B0140099385F /* WBAssetAlbum.h */,
+				265F525A2047B0140099385F /* WBAssetAlbum.m */,
+				265F525B2047B0140099385F /* WBAssetsManager.h */,
+				265F525C2047B0140099385F /* WBAssetsManager.m */,
 			);
-			name = WBCategories;
-			path = ../../../../WBCategories;
+			path = WBAssetsKit;
 			sourceTree = "<group>";
 		};
-		265F522D2047AB270099385F /* WBSlider */ = {
+		265F525D2047B0140099385F /* WBCategories */ = {
 			isa = PBXGroup;
 			children = (
-				265F522E2047AB270099385F /* WBColorSlider.h */,
-				265F522F2047AB270099385F /* WBColorSlider.m */,
-				265F52302047AB270099385F /* WBSlider.h */,
-				265F52312047AB270099385F /* WBSlider.m */,
+				265F525E2047B0140099385F /* NSArray+WB.h */,
+				265F525F2047B0140099385F /* NSArray+WB.m */,
+				265F52602047B0140099385F /* NSDateFormatter+WB.h */,
+				265F52612047B0140099385F /* NSDateFormatter+WB.m */,
+				265F52622047B0140099385F /* NSString+WB.h */,
+				265F52632047B0140099385F /* NSString+WB.m */,
+				265F52642047B0140099385F /* UIButton+WB.h */,
+				265F52652047B0140099385F /* UIButton+WB.m */,
+				265F52662047B0140099385F /* UIColor+WB.h */,
+				265F52672047B0140099385F /* UIColor+WB.m */,
+				265F52682047B0140099385F /* UIImage+WB.h */,
+				265F52692047B0140099385F /* UIImage+WB.m */,
+				265F526A2047B0140099385F /* UINavigationController+WB.h */,
+				265F526B2047B0140099385F /* UINavigationController+WB.m */,
+				265F526C2047B0140099385F /* UIView+WB.h */,
+				265F526D2047B0140099385F /* UIView+WB.m */,
+				265F526E2047B0140099385F /* WBCategories.h */,
 			);
-			name = WBSlider;
-			path = ../../../../WBSlider;
+			path = WBCategories;
 			sourceTree = "<group>";
 		};
-		265F52322047AB270099385F /* WBInputKit */ = {
+		265F526F2047B0140099385F /* WBHorizontalButtonMenu */ = {
 			isa = PBXGroup;
 			children = (
-				265F52332047AB270099385F /* WBTextField.h */,
-				265F52342047AB270099385F /* WBTextField.m */,
-				265F52352047AB270099385F /* WBTextView.h */,
-				265F52362047AB270099385F /* WBTextView.m */,
+				265F52702047B0140099385F /* WBHorizontalButtonMenu.h */,
+				265F52712047B0140099385F /* WBHorizontalButtonMenu.m */,
 			);
-			name = WBInputKit;
-			path = ../../../../WBInputKit;
+			path = WBHorizontalButtonMenu;
 			sourceTree = "<group>";
 		};
-		265F52372047AB270099385F /* WBAssetsKit */ = {
+		265F52722047B0140099385F /* WBInputKit */ = {
 			isa = PBXGroup;
 			children = (
-				265F52382047AB270099385F /* WBAsset.h */,
-				265F52392047AB270099385F /* WBAsset.m */,
-				265F523A2047AB270099385F /* WBAssetAlbum.h */,
-				265F523B2047AB270099385F /* WBAssetAlbum.m */,
-				265F523C2047AB270099385F /* WBAssetsManager.h */,
-				265F523D2047AB270099385F /* WBAssetsManager.m */,
+				265F52732047B0140099385F /* WBTextField.h */,
+				265F52742047B0140099385F /* WBTextField.m */,
+				265F52752047B0140099385F /* WBTextView.h */,
+				265F52762047B0140099385F /* WBTextView.m */,
 			);
-			name = WBAssetsKit;
-			path = ../../../../WBAssetsKit;
+			path = WBInputKit;
 			sourceTree = "<group>";
 		};
-		265F523E2047AB270099385F /* WBHorizontalButtonMenu */ = {
+		265F52772047B0140099385F /* WBKeychainWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				265F523F2047AB270099385F /* WBHorizontalButtonMenu.h */,
-				265F52402047AB270099385F /* WBHorizontalButtonMenu.m */,
+				265F52782047B0140099385F /* WBKeychainWrapper.h */,
+				265F52792047B0140099385F /* WBKeychainWrapper.m */,
 			);
-			name = WBHorizontalButtonMenu;
-			path = ../../../../WBHorizontalButtonMenu;
+			path = WBKeychainWrapper;
 			sourceTree = "<group>";
 		};
-		265F52412047AB270099385F /* WBKeychainWrapper */ = {
+		265F527A2047B0140099385F /* WBSlider */ = {
 			isa = PBXGroup;
 			children = (
-				265F52422047AB270099385F /* WBKeychainWrapper.h */,
-				265F52432047AB270099385F /* WBKeychainWrapper.m */,
+				265F527B2047B0140099385F /* WBColorSlider.h */,
+				265F527C2047B0140099385F /* WBColorSlider.m */,
+				265F527D2047B0140099385F /* WBSlider.h */,
+				265F527E2047B0140099385F /* WBSlider.m */,
 			);
-			name = WBKeychainWrapper;
-			path = ../../../../WBKeychainWrapper;
+			path = WBSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,26 +286,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265F524E2047AB270099385F /* WBTextField.m in Sources */,
-				265F52482047AB270099385F /* UIColor+WB.m in Sources */,
-				265F52532047AB270099385F /* WBHorizontalButtonMenu.m in Sources */,
-				265F524C2047AB270099385F /* WBColorSlider.m in Sources */,
-				265F524F2047AB270099385F /* WBTextView.m in Sources */,
 				265F51CF2047A98B0099385F /* ViewController.m in Sources */,
+				265F528F2047B0140099385F /* WBSlider.m in Sources */,
+				265F52802047B0140099385F /* WBAssetAlbum.m in Sources */,
+				265F528D2047B0140099385F /* WBKeychainWrapper.m in Sources */,
+				265F52862047B0140099385F /* UIColor+WB.m in Sources */,
+				265F527F2047B0140099385F /* WBAsset.m in Sources */,
+				265F52872047B0140099385F /* UIImage+WB.m in Sources */,
 				265F51DA2047A98B0099385F /* main.m in Sources */,
+				265F52842047B0140099385F /* NSString+WB.m in Sources */,
+				265F52822047B0140099385F /* NSArray+WB.m in Sources */,
+				265F52882047B0140099385F /* UINavigationController+WB.m in Sources */,
+				265F528C2047B0140099385F /* WBTextView.m in Sources */,
+				265F528A2047B0140099385F /* WBHorizontalButtonMenu.m in Sources */,
+				265F528B2047B0140099385F /* WBTextField.m in Sources */,
+				265F52852047B0140099385F /* UIButton+WB.m in Sources */,
 				265F51CC2047A98B0099385F /* AppDelegate.m in Sources */,
-				265F52542047AB270099385F /* WBKeychainWrapper.m in Sources */,
-				265F52452047AB270099385F /* NSDateFormatter+WB.m in Sources */,
-				265F52462047AB270099385F /* NSString+WB.m in Sources */,
-				265F524A2047AB270099385F /* UINavigationController+WB.m in Sources */,
-				265F52512047AB270099385F /* WBAssetAlbum.m in Sources */,
-				265F52522047AB270099385F /* WBAssetsManager.m in Sources */,
-				265F524D2047AB270099385F /* WBSlider.m in Sources */,
-				265F52472047AB270099385F /* UIButton+WB.m in Sources */,
-				265F524B2047AB270099385F /* UIView+WB.m in Sources */,
-				265F52502047AB270099385F /* WBAsset.m in Sources */,
-				265F52492047AB270099385F /* UIImage+WB.m in Sources */,
-				265F52442047AB270099385F /* NSArray+WB.m in Sources */,
+				265F528E2047B0140099385F /* WBColorSlider.m in Sources */,
+				265F52892047B0140099385F /* UIView+WB.m in Sources */,
+				265F52832047B0140099385F /* NSDateFormatter+WB.m in Sources */,
+				265F52812047B0140099385F /* WBAssetsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
