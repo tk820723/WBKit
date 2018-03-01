@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WBKit"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "Useful Develop Kit"
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
