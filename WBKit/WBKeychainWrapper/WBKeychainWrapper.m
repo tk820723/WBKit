@@ -88,6 +88,14 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.velotech.dts.KeychainUI\0
     [self setKeychainObject:password forKey:(__bridge id)kSecValueData];
 }
 
+- (void)setKeychainAccount:(NSString *)account{
+    [self setKeychainObject:account forKey:(__bridge id)kSecAttrAccount];
+}
+
+- (NSString *)account{
+    return [keychainData objectForKey:(__bridge id)kSecAttrAccount];
+}
+
 // Implement the myObjectForKey: method, which reads an attribute value from a dictionary:
 - (id)keychainObjectForKey:(id)key
 {

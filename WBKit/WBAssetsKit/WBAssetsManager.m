@@ -213,34 +213,42 @@ static WBAssetsManager *_shareInstance;
     [self.cacheImageManager cancelImageRequest:requestID];
 }
 
-- (void)saveVideoToAlbum:(NSString *)path success:(void (^)(NSString *localID))successBlock failure:(void (^)(NSError *error))failureBlock{
+- (void)saveAssetToAlbum: (NSString *)path assetType: (PHAssetMediaType)type completion: (void (^)(NSError *error, NSString *localID))completion{
     if ([self authorizationStatus] == PHAuthorizationStatusAuthorized) {
         __block NSString *localId;
         [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-            
-            //写入图片到相册
-            // Request creating an asset from the image.
-            PHAssetChangeRequest *createAssetRequest = [PHAssetChangeRequest creationRequestForAssetFromVideoAtFileURL:[NSURL fileURLWithPath:path]];
+            PHAssetChangeRequest *createAssetRequest;
+            // Request creating an asset from media.
+            if (type == PHAssetMediaTypeVideo) {
+                createAssetRequest = [PHAssetChangeRequest creationRequestForAssetFromVideoAtFileURL:[NSURL fileURLWithPath:path]];
+            }else if (type == PHAssetMediaTypeImage){
+                createAssetRequest = [PHAssetChangeRequest  creationRequestForAssetFromImageAtFileURL:[NSURL fileURLWithPath:path]];
+            }
             localId = createAssetRequest.placeholderForCreatedAsset.localIdentifier;
         } completionHandler:^(BOOL success, NSError * _Nullable error) {
             if (!error) {
-                NSLog(@"video保存成功");
-                if (successBlock) {
-                    successBlock(localId);
+                if (completion) {
+                    completion(nil,localId);
                 }
             }else{
-                NSLog(@"video保存失败 %@",error.localizedDescription);
-                if (failureBlock) {
-                    failureBlock(error);
+                if (completion) {
+                    completion(error,nil);
                 }
             }
         }];
     }else{
-        NSLog(@"video保存失败 没有权限");
-        if (failureBlock) {
-            failureBlock([NSError errorWithDomain:@"com.error.domain" code:1001 userInfo:@{NSLocalizedDescriptionKey:@"Unauthorized"}]);
+        if (completion) {
+            completion([NSError errorWithDomain:@"com.error.domain" code:1001 userInfo:@{NSLocalizedDescriptionKey:@"Unauthorized"}],nil);
         }
     }
+}
+
+- (void)saveImageToAlbum:(NSString *)path completion: (void (^)(NSError *error, NSString *localID))completion{
+    [self saveAssetToAlbum:path assetType:PHAssetMediaTypeImage completion:completion];
+}
+
+- (void)saveVideoToAlbum:(NSString *)path completion: (void (^)(NSError *error, NSString *localID))completion{
+    [self saveAssetToAlbum:path assetType:PHAssetMediaTypeVideo completion:completion];
 }
 
 @end

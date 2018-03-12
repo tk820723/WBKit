@@ -30,4 +30,7 @@
 
 - (void)cancelRequest: (PHImageRequestID)requestID;
 
+//将沙盒的媒体文件储存到相册
+- (void)saveImageToAlbum:(NSString *)path completion: (void (^)(NSError *error, NSString *localID))completion;
+- (void)saveVideoToAlbum:(NSString *)path completion: (void (^)(NSError *error, NSString *localID))completion;
 @end

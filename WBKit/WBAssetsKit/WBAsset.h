@@ -11,7 +11,10 @@
 
 typedef enum : NSUInteger {
     WBAssetTypePhoto = 0,
-    WBAssetTypeVideo
+    WBAssetTypeLivePhoto,
+    WBAssetTypePhotoGif,
+    WBAssetTypeVideo,
+    WBAssetTypeAudio,
 } WBAssetType;
 
 @interface WBAsset : PHAsset

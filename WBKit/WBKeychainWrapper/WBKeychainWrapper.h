@@ -23,6 +23,9 @@
 // 设置password
 - (void)setKeychainPassword: (NSString *)password;
 - (NSString *)password;
+// 设置account
+- (void)setKeychainAccount: (NSString *)account;
+- (NSString *)account;
 
 - (BOOL)removePasswordItem;
 
