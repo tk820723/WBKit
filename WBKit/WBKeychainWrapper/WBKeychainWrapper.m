@@ -33,43 +33,46 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.velotech.dts.KeychainUI\0
 - (id)init
 {
     if ((self = [super init])) {
-        
-        OSStatus keychainErr = noErr;
-        // Set up the keychain search dictionary:
-        genericPasswordQuery = [[NSMutableDictionary alloc] init];
-        // This keychain item is a generic password.
-        [genericPasswordQuery setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
-        // The kSecAttrGeneric attribute is used to store a unique string that is used
-        // to easily identify and find this keychain item. The string is first
-        // converted to an NSData object:
-        NSData *keychainItemID = [NSData dataWithBytes:kKeychainItemIdentifier length:strlen((const char *)kKeychainItemIdentifier)];
-        [genericPasswordQuery setObject:keychainItemID forKey:(__bridge id)kSecAttrGeneric];
-//        // Return the attributes of the first match only:
-//        [genericPasswordQuery setObject:(__bridge id)kSecMatchLimitOne forKey:(__bridge id)kSecMatchLimit];
-//        // Return the attributes of the keychain item (the password is
-//        //  acquired in the secItemFormatToDictionary: method):
-        [genericPasswordQuery setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge id)kSecReturnAttributes];
-        
-        //Initialize the dictionary used to hold return data from the keychain:
-        CFMutableDictionaryRef outDictionary = nil;
-        // If the keychain item exists, return the attributes of the item:
-        keychainErr = SecItemCopyMatching((__bridge CFDictionaryRef)genericPasswordQuery,
-                                          (CFTypeRef *)&outDictionary);
-        if (keychainErr == noErr) {
-            // Convert the data dictionary into the format used by the view controller:
-            self.keychainData = [self secItemFormatToDictionary:(__bridge_transfer NSMutableDictionary *)outDictionary];
-        } else if (keychainErr == errSecItemNotFound) {
-            // Put default values into the keychain if no matching
-            // keychain item is found:
-            [self resetKeychainItem];
-            if (outDictionary) CFRelease(outDictionary);
-        } else {
-            // Any other error is unexpected.
-            NSAssert(NO, @"Serious error.\n");
-            if (outDictionary) CFRelease(outDictionary);
-        }
+        [self refreshData];
     }
     return self;
+}
+
+- (void)refreshData{
+    OSStatus keychainErr = noErr;
+    // Set up the keychain search dictionary:
+    genericPasswordQuery = [[NSMutableDictionary alloc] init];
+    // This keychain item is a generic password.
+    [genericPasswordQuery setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
+    // The kSecAttrGeneric attribute is used to store a unique string that is used
+    // to easily identify and find this keychain item. The string is first
+    // converted to an NSData object:
+    NSData *keychainItemID = [NSData dataWithBytes:kKeychainItemIdentifier length:strlen((const char *)kKeychainItemIdentifier)];
+    [genericPasswordQuery setObject:keychainItemID forKey:(__bridge id)kSecAttrGeneric];
+    //        // Return the attributes of the first match only:
+    //        [genericPasswordQuery setObject:(__bridge id)kSecMatchLimitOne forKey:(__bridge id)kSecMatchLimit];
+    //        // Return the attributes of the keychain item (the password is
+    //        //  acquired in the secItemFormatToDictionary: method):
+    [genericPasswordQuery setObject:(__bridge id)kCFBooleanTrue forKey:(__bridge id)kSecReturnAttributes];
+    
+    //Initialize the dictionary used to hold return data from the keychain:
+    CFMutableDictionaryRef outDictionary = nil;
+    // If the keychain item exists, return the attributes of the item:
+    keychainErr = SecItemCopyMatching((__bridge CFDictionaryRef)genericPasswordQuery,
+                                      (CFTypeRef *)&outDictionary);
+    if (keychainErr == noErr) {
+        // Convert the data dictionary into the format used by the view controller:
+        self.keychainData = [self secItemFormatToDictionary:(__bridge_transfer NSMutableDictionary *)outDictionary];
+    } else if (keychainErr == errSecItemNotFound) {
+        // Put default values into the keychain if no matching
+        // keychain item is found:
+        [self resetKeychainItem];
+        if (outDictionary) CFRelease(outDictionary);
+    } else {
+        // Any other error is unexpected.
+        NSAssert(NO, @"Serious error.\n");
+        if (outDictionary) CFRelease(outDictionary);
+    }
 }
 
 // Implement the mySetObject:forKey method, which writes attributes to the keychain:

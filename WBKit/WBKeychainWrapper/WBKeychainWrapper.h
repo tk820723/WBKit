@@ -27,6 +27,8 @@
 - (void)setKeychainAccount: (NSString *)account;
 - (NSString *)account;
 
+- (void)refreshData;
+
 - (BOOL)removePasswordItem;
 
 // 设置keychainData default value
