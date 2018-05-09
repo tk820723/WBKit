@@ -30,6 +30,7 @@
 		265F528D2047B0140099385F /* WBKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F52792047B0140099385F /* WBKeychainWrapper.m */; };
 		265F528E2047B0140099385F /* WBColorSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F527C2047B0140099385F /* WBColorSlider.m */; };
 		265F528F2047B0140099385F /* WBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F527E2047B0140099385F /* WBSlider.m */; };
+		26E5BEB420A2F4D7004E9C50 /* WBPopout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E5BEB320A2F4D7004E9C50 /* WBPopout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,8 @@
 		265F527C2047B0140099385F /* WBColorSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBColorSlider.m; sourceTree = "<group>"; };
 		265F527D2047B0140099385F /* WBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSlider.h; sourceTree = "<group>"; };
 		265F527E2047B0140099385F /* WBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSlider.m; sourceTree = "<group>"; };
+		26E5BEB220A2F4D7004E9C50 /* WBPopout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPopout.h; sourceTree = "<group>"; };
+		26E5BEB320A2F4D7004E9C50 /* WBPopout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPopout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 		265F52552047B0140099385F /* WBKit */ = {
 			isa = PBXGroup;
 			children = (
+				26E5BEB120A2F4D7004E9C50 /* WBPopout */,
 				265F52562047B0140099385F /* WBAssetsKit */,
 				265F525D2047B0140099385F /* WBCategories */,
 				265F526F2047B0140099385F /* WBHorizontalButtonMenu */,
@@ -215,6 +219,15 @@
 			path = WBSlider;
 			sourceTree = "<group>";
 		};
+		26E5BEB120A2F4D7004E9C50 /* WBPopout */ = {
+			isa = PBXGroup;
+			children = (
+				26E5BEB220A2F4D7004E9C50 /* WBPopout.h */,
+				26E5BEB320A2F4D7004E9C50 /* WBPopout.m */,
+			);
+			path = WBPopout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +304,7 @@
 				265F52802047B0140099385F /* WBAssetAlbum.m in Sources */,
 				265F528D2047B0140099385F /* WBKeychainWrapper.m in Sources */,
 				265F52862047B0140099385F /* UIColor+WB.m in Sources */,
+				26E5BEB420A2F4D7004E9C50 /* WBPopout.m in Sources */,
 				265F527F2047B0140099385F /* WBAsset.m in Sources */,
 				265F52872047B0140099385F /* UIImage+WB.m in Sources */,
 				265F51DA2047A98B0099385F /* main.m in Sources */,
