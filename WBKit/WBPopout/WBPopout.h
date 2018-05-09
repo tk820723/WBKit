@@ -32,7 +32,7 @@
  @param popoutView 必须有自己的bounds
  @param isNeedBlurBg 是否需要模糊背景
  */
-+ (void)showPopoutView: (UIView *)popoutView isNeedBlurBg: (BOOL)isNeedBlurBg dismissBlock: (void(^)())dismissBlock;
++ (void)showPopoutView: (UIView *)popoutView isNeedBlurBg: (BOOL)isNeedBlurBg dismissBlock: (void(^)(void))dismissBlock;
 
 /**
  关闭弹窗
