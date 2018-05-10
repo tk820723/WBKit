@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = 'WBKit/Resource/*.bundle'
+  s.resource = 'WBKit/Resource/*.bundle'
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
