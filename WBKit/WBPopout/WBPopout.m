@@ -126,15 +126,22 @@ static WBPopout *_shareInstance;
 
     [self startPopoutAnimation];
 }
+
 - (NSBundle *)getResourcesBundle
 {
-    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"WBKit" withExtension:@"bundle"]];
-    return bundle;
+    NSURL *url = [[NSBundle bundleForClass:[self class]] URLForResource:@"WBPopout" withExtension:@"bundle"];
+    if (url) {
+        return [NSBundle bundleWithURL:url];
+    }
+    return nil;
 }
 
 - (UIImage *)loadImageFromResourceBundle:(NSString *)imageName
 {
     NSBundle *bundle = [self getResourcesBundle];
+    if (!bundle) {
+        return nil;
+    }
     NSString *imageFileName = [NSString stringWithFormat:@"%@.png",imageName];
     UIImage *image = [UIImage imageNamed:imageFileName inBundle:bundle compatibleWithTraitCollection:nil];
     return image;
