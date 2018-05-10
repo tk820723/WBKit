@@ -29,6 +29,22 @@
     
 }
 
+- (void)wb_setTitle:(NSString *)title localImage:(UIImage *)image spacing:(CGFloat)spaceing style:(VEButtonNewLayoutType)layoutType{
+    [self setTitle:title forState:UIControlStateNormal];
+    [self setImage:image forState:UIControlStateNormal];
+    CGSize textSize = [title boundingRectWithSize:CGSizeMake(MAXFLOAT, 100) options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName: self.titleLabel.font} context:nil].size;
+    
+    CGSize imageSize = image.size;
+    
+    if (layoutType == VEButtonNewLayoutTypeUpIconDownTitle) {
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, -imageSize.width, -imageSize.height - spaceing, 0);
+        self.imageEdgeInsets = UIEdgeInsetsMake(-textSize.height - spaceing, 0, 0, -textSize.width);
+    }else if (layoutType == VEButtonNewLayoutTypeLeftTitleRightIcon){
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, -imageSize.width - spaceing*0.5, 0, imageSize.width+ spaceing*0.5);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, textSize.width+ spaceing*0.5, 0, -textSize.width- spaceing*0.5);
+    }
+}
+
 //- (void)wb_setSelected:(BOOL)selected{
 //    [self setSelected:selected];
 //    if (selected) {

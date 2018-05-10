@@ -17,6 +17,7 @@ typedef enum : NSUInteger {
 @interface UIButton (VEVertical)
 
 - (void)wb_setTitle: (NSString *)title localImage: (NSString *)localImageName titleColor: (UIColor *)titleColor titleFont: (UIFont *)titleFont spacing: (CGFloat)spaceing style: (VEButtonNewLayoutType)layoutType;
+- (void)wb_setTitle: (NSString *)title localImage: (UIImage *)image spacing: (CGFloat)spaceing style: (VEButtonNewLayoutType)layoutType;
 
 //- (void)wb_setSelected: (BOOL)selected;
 
