@@ -6,6 +6,7 @@
 //
 
 #import "WBPopout.h"
+#import <Masonry/Masonry.h>
 
 @interface WBPopout() <UIGestureRecognizerDelegate>
 @property (nonatomic,weak) UIView *container;
@@ -38,23 +39,35 @@ static WBPopout *_shareInstance;
     [self showPopoutView:popoutView isNeedBlurBg:isNeedBlurBg dismissBlock:nil];
 }
 
-+ (void)showPopoutView:(UIView *)popoutView isNeedBlurBg:(BOOL)isNeedBlurBg dismissBlock:(void (^)())dismissBlock{
++ (void)showPopoutView:(UIView *)popoutView isNeedBlurBg:(BOOL)isNeedBlurBg dismissBlock:(void (^)(void))dismissBlock{
     [[WBPopout sharedInstance] showPopoutView:popoutView isNeedBlurBg:isNeedBlurBg dismissBlock:dismissBlock];
 }
 
-+ (void)dismissWithCompletion:(void (^)())completion{
++ (void)dismissWithCompletion:(void (^)(void))completion{
     [[WBPopout sharedInstance] dismissWithCompletion:completion];
 }
 
-- (void)showPopoutView:(UIView *)popoutView isNeedBlurBg:(BOOL)isNeedBlurBg dismissBlock:(void (^)())dismissBlock{
+- (void)showPopoutView:(UIView *)popoutView isNeedBlurBg:(BOOL)isNeedBlurBg dismissBlock:(void (^)(void))dismissBlock{
+    
     //已经显示了 或着正在显示
     if (self.container || self.isAnimating) {
         [self clear];
         return;
     }
+    
+    if (!popoutView) {
+            NSLog(@"WBPopout error: popoutView cannot by nil!!");
+            return;
+    }
+
     self.isNeedBlurEffect = isNeedBlurBg;
     
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    if (!window) {
+        NSLog(@"WBPopout error: keywindow cannot by nil!!");
+        return;
+    }
     
     UIView *container = [[UIView alloc] init];
     self.container = container;
@@ -71,20 +84,20 @@ static WBPopout *_shareInstance;
         self.containerBg = effectView;
         effectView.userInteractionEnabled = NO;
         [self.container addSubview:self.containerBg];
-        self.container.backgroundColor = CBColorClear;
+        self.container.backgroundColor = [UIColor clearColor];
         
         [effectView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.container);
         }];
     }else{
-        self.container.backgroundColor = CBColorWithAlpha(0, 0, 0, 0.4);
+        self.container.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
         self.container.alpha = 0;
     }
     
     UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.closeBtn = closeBtn;
     [closeBtn addTarget:self action:@selector(closeBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.closeBtn setImage:[UIImage cb_svgImageNamed:@"close_24x24" size:CGSizeMake(24, 24) tintColor:CBColorBlack500] forState:UIControlStateNormal];
+    [self.closeBtn setImage:[UIImage imageNamed:@"popout_close"] forState:UIControlStateNormal];
     [self.container addSubview:self.closeBtn];
     
     [self.container addSubview:popoutView];
@@ -92,7 +105,11 @@ static WBPopout *_shareInstance;
     
     [popoutView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.container);
+        if (popoutView.bounds.size.width && popoutView.bounds.size.height) {
+            make.size.mas_equalTo(popoutView.bounds.size);
+        }
     }];
+
     
     [self.container mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(window);
