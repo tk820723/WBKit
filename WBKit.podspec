@@ -117,6 +117,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'WBPopout' do |ss|
 	ss.source_files = 'WBKit/WBPopout/*.{h,m}'
+      	ss.resource = "WBKit/WBPopout/WBPopout.bundle"
   end
 
   # s.exclude_files = "Classes/Exclude"
@@ -133,8 +134,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resource = 'WBKit/Resource/*.bundle'
-
+  # s.resource = 'WBKit/Resource/*.bundle'
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 

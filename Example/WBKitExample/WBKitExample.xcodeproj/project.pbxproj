@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		263ED26620A414310014BB59 /* WBKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 263ED26520A414310014BB59 /* WBKit.bundle */; };
+		263ED26820A41B4C0014BB59 /* WBPopout.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 263ED26720A41B4C0014BB59 /* WBPopout.bundle */; };
 		265F51CC2047A98B0099385F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F51CB2047A98B0099385F /* AppDelegate.m */; };
 		265F51CF2047A98B0099385F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265F51CE2047A98B0099385F /* ViewController.m */; };
 		265F51D22047A98B0099385F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265F51D02047A98B0099385F /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		263ED26520A414310014BB59 /* WBKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WBKit.bundle; sourceTree = "<group>"; };
+		263ED26720A41B4C0014BB59 /* WBPopout.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WBPopout.bundle; sourceTree = "<group>"; };
 		265F51C72047A98B0099385F /* WBKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		265F51CA2047A98B0099385F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		265F51CB2047A98B0099385F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,14 +109,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		263ED26420A4141A0014BB59 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				263ED26520A414310014BB59 /* WBKit.bundle */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		265F51BE2047A98B0099385F = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +147,6 @@
 		265F52552047B0140099385F /* WBKit */ = {
 			isa = PBXGroup;
 			children = (
-				263ED26420A4141A0014BB59 /* Resource */,
 				26E5BEB120A2F4D7004E9C50 /* WBPopout */,
 				265F52562047B0140099385F /* WBAssetsKit */,
 				265F525D2047B0140099385F /* WBCategories */,
@@ -248,6 +239,7 @@
 		26E5BEB120A2F4D7004E9C50 /* WBPopout */ = {
 			isa = PBXGroup;
 			children = (
+				263ED26720A41B4C0014BB59 /* WBPopout.bundle */,
 				26E5BEB220A2F4D7004E9C50 /* WBPopout.h */,
 				26E5BEB320A2F4D7004E9C50 /* WBPopout.m */,
 			);
@@ -326,8 +318,8 @@
 			files = (
 				265F51D72047A98B0099385F /* LaunchScreen.storyboard in Resources */,
 				265F51D42047A98B0099385F /* Assets.xcassets in Resources */,
-				263ED26620A414310014BB59 /* WBKit.bundle in Resources */,
 				265F51D22047A98B0099385F /* Main.storyboard in Resources */,
+				263ED26820A41B4C0014BB59 /* WBPopout.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
