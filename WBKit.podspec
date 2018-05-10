@@ -116,7 +116,11 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'WBPopout' do |ss|
-	ss.source_files = 'WBKit/WBPopout/*.{h,m,png}'
+	ss.source_files = 'WBKit/WBPopout/*.{h,m}'
+  end
+
+  s.subspec 'Resources' do |resources|
+        resources.resource_bundle = {'WBKit' => ['Resources/**/*.{png}']}
   end
   # s.exclude_files = "Classes/Exclude"
 

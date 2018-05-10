@@ -97,7 +97,7 @@ static WBPopout *_shareInstance;
     UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.closeBtn = closeBtn;
     [closeBtn addTarget:self action:@selector(closeBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.closeBtn setImage:[UIImage imageNamed:@"popout_close"] forState:UIControlStateNormal];
+    [self.closeBtn setImage:[self loadImageFromResourceBundle:@"popout_close"] forState:UIControlStateNormal];
     [self.container addSubview:self.closeBtn];
     
     [self.container addSubview:popoutView];
@@ -125,6 +125,19 @@ static WBPopout *_shareInstance;
     self.dismissBlock = dismissBlock;
 
     [self startPopoutAnimation];
+}
+- (NSBundle *)getResourcesBundle
+{
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"WBKit" withExtension:@"bundle"]];
+    return bundle;
+}
+
+- (UIImage *)loadImageFromResourceBundle:(NSString *)imageName
+{
+    NSBundle *bundle = [self getResourcesBundle];
+    NSString *imageFileName = [NSString stringWithFormat:@"%@.png",imageName];
+    UIImage *image = [UIImage imageNamed:imageFileName inBundle:bundle compatibleWithTraitCollection:nil];
+    return image;
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
