@@ -22,7 +22,8 @@
         album.count = fetchResult.count;
         
         for (PHAsset *asset in fetchResult) {
-            [assets addObject:asset];
+            WBAsset *_asset = [WBAsset modelWithAsset:asset];
+            [assets addObject:_asset];
         }
         album.assets = assets;
     }
