@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WBKit"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "Useful Develop Kit"
 
   # This description is used to generate tags and improve search results.
@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'WBPopout' do |ss|
-	ss.source_files = 'WBKit/WBPopout/*.{h,m}'
+	ss.source_files = 'WBKit/WBPopout/*.{h,m,png}'
   end
   # s.exclude_files = "Classes/Exclude"
 
