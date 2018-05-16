@@ -124,6 +124,14 @@
 }
 
 
+- (UIImage *)wb_flipImage{
+    UIGraphicsBeginImageContext(self.size);
+    CGContextDrawImage(UIGraphicsGetCurrentContext(),CGRectMake(0.,0., self.size.width, self.size.height),self.CGImage);
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 // CGContext 裁剪
 - (UIImage *)wb_cornerRadius:(CGFloat)c {
     int w = self.size.width * self.scale;

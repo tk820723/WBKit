@@ -18,6 +18,7 @@
 + (UIImage *)wb_imageWithColor:(UIColor *)color Size:(CGSize)size rounded: (BOOL)rounded;
 
 - (UIImage *)wb_scaleImageWithSize: (CGSize)size;
+- (UIImage *)wb_flipImage;
 //Offset 边上留下的透明区域
 - (UIImage *)wb_scaleImageWithOffset: (UIEdgeInsets)insets;
 - (UIImage *)wb_scaleImageWithSize: (CGSize)size offset: (UIEdgeInsets)insets;
