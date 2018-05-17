@@ -209,7 +209,7 @@
             return [NSString stringWithFormat:@"%.1fk",k];
         }
     }else{
-        return [NSString stringWithFormat:@"%zd",count];
+        return [NSString stringWithFormat:@"%d",(int)count];
     }
 }
 
